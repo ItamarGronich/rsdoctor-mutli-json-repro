@@ -2,6 +2,10 @@
 
 This a reproduction repo for a ptoential bug in rsdoctor.
 
+> [!WARNING]
+> This bug is inconsistent between builds.
+> It may not reproduce on your first try, but it will eventually.
+
 When running rsdoctor in multiplugin setup, with this config:
 
 ```ts
@@ -53,7 +57,7 @@ dist/
 
 ## Interesting notes
 
-If you delete the `name` configuration from the plugin config but leave it on each config (checkout branch `no-plugin-name` to see), things do get better but not ideal.
+If you delete the `name` configuration from the plugin config but add it on each config (checkout branch `no-plugin-name` to see), things do get better but not ideal.
 result:
 
 ```

@@ -9,7 +9,6 @@ type Options = {
 
 function createConfig(options: Options) {
   return defineConfig({
-    name: options.target,
     target: options.target,
     mode: process.env.NODE_ENV === "production" ? "production" : "development",
     devtool: "source-map",
