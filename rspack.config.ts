@@ -9,6 +9,7 @@ type Options = {
 
 function createConfig(options: Options) {
   return defineConfig({
+    name: options.target,
     target: options.target,
     mode: process.env.NODE_ENV === "production" ? "production" : "development",
     devtool: "source-map",
@@ -21,7 +22,7 @@ function createConfig(options: Options) {
       clean: true,
     },
     resolve: {
-      extensions: ["...", ".ts", ".cts", ".mts", ".tsx"],
+      extensions: ["...", ".ts"],
     },
   });
 }
