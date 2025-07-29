@@ -36,6 +36,7 @@ export default defineConfig([
       name: config.target as "web" | "node",
       stage: index,
       mode: "brief",
+      disableClientServer: true,
       brief: {
         writeDataJson: true,
       },
