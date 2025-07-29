@@ -33,7 +33,6 @@ export default defineConfig([
   config.plugins ||= [];
   config.plugins.push(
     new RsdoctorRspackMultiplePlugin({
-      name: config.target as "web" | "node",
       stage: index,
       mode: "brief",
       disableClientServer: true,
